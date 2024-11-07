@@ -23,7 +23,7 @@
 {
     'name': "Timesheet Overtime",
     'author': "Martel Innovate",
-    "version": "14.0.1.0.0",
+    "version": "16.0.1.1.4",
     'summary': 'Track over- and under-time based on timesheets (no attendance required), generate timesheets',
     'website': "http://www.martel-innovate.com",
     'category': 'Human Resources',
