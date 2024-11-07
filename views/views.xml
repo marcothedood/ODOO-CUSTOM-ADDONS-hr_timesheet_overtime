@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+    <!-- Timesheet Overtime View -->
     <record id="timesheet_overtime" model="ir.ui.view">
         <field name="name">hr_timesheet.overtime</field>
         <field name="model">hr_timesheet.sheet</field>
         <field name="inherit_id" ref="hr_timesheet_sheet.hr_timesheet_sheet_form"/>
         <field name="arch" type="xml">
-            <xpath expr="/form/sheet/group/group[@name='dates']" position="after">
+            <!-- Add fields after the dates group -->
+            <xpath expr="//form/sheet/div/group/group[@name='dates']" position="after">
                 <group>
                     <field name="total_duty_hours" widget="float_time" string="Expected this timesheet"/>
                     <field name="total_time" widget="float_time" string="Total time"/>
@@ -13,25 +15,26 @@
                     <field name="calculate_diff_hours" widget="float_time" string="Total balance"/>
                 </group>
             </xpath>
-            <notebook position="inside">
+            <!-- Add Flexitime Analysis page to the notebook -->
+            <xpath expr="//form/sheet/notebook" position="inside">
                 <page string="Flexitime Analysis">
                     <field name="analysis" widget="html" nolabel="1"/>
                 </page>
-            </notebook>
+            </xpath>
         </field>
     </record>
 
-
+    <!-- Project Exclude from Printed Timesheets View -->
     <record id="project_excl_from_printed_timesheets_form" model="ir.ui.view">
         <field name="name">Add field excl_from_printed_timesheets</field>
         <field name="model">project.project</field>
         <field name="inherit_id" ref="project.edit_project"/>
         <field name="priority">24</field>
         <field name="arch" type="xml">
-
+            <!-- Insert exclusion field before the rating settings block -->
             <xpath expr="//div[@id='rating_settings']/.." position="before">
                 <div class="row mt16 o_settings_container">
-                    <div class="col-lg-6 o_setting_box"  id="timesheet_settings_excl_pr_timesh">
+                    <div class="col-lg-6 o_setting_box" id="timesheet_settings_excl_pr_timesh">
                         <div class="o_setting_left_pane">
                             <field name="excl_from_printed_timesheets"/>
                         </div>
@@ -44,9 +47,7 @@
                     </div>
                 </div>
             </xpath>
-
         </field>
     </record>
-
 
 </odoo>
