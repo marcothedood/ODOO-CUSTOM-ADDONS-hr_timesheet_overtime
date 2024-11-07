@@ -6,8 +6,8 @@
         <field name="model">hr_timesheet.sheet</field>
         <field name="inherit_id" ref="hr_timesheet_sheet.hr_timesheet_sheet_form"/>
         <field name="arch" type="xml">
-            <!-- Add fields after the dates group -->
-            <xpath expr="//form/sheet/div/group/group[@name='dates']" position="after">
+            <!-- Add fields after the group containing 'dates' -->
+            <xpath expr="//form/sheet/group/group[@name='dates']" position="after">
                 <group>
                     <field name="total_duty_hours" widget="float_time" string="Expected this timesheet"/>
                     <field name="total_time" widget="float_time" string="Total time"/>
