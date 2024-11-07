@@ -32,21 +32,18 @@
         <field name="priority">24</field>
         <field name="arch" type="xml">
             <!-- Insert exclusion field before the rating settings block -->
-            <xpath expr="//div[@id='rating_settings']/.." position="before">
-                <div class="row mt16 o_settings_container">
-                    <div class="col-lg-6 o_setting_box" id="timesheet_settings_excl_pr_timesh">
-                        <div class="o_setting_left_pane">
-                            <field name="excl_from_printed_timesheets"/>
-                        </div>
-                        <div class="o_setting_right_pane">
-                            <label for="excl_from_printed_timesheets" string="Exclude from printed timesheets"/>
-                            <div class="text-muted">
-                                Time written on this project will not be shown on the timesheet report
-                            </div>
-                        </div>
+            <xpath expr="//form//div[last()]" position="before">
+                <div class="o_setting_left_pane">
+                    <field name="excl_from_printed_timesheets"/>
+                </div>
+                <div class="o_setting_right_pane">
+                    <label for="excl_from_printed_timesheets" string="Exclude from printed timesheets"/>
+                    <div class="text-muted">
+                        Time written on this project will not be shown on the timesheet report.
                     </div>
                 </div>
             </xpath>
+
         </field>
     </record>
 
