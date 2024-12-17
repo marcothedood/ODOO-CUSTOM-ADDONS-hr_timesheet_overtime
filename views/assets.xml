@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <template id="assets_backend" name="hr_timesheet_overtime assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/css" href="/hr_timesheet_overtime/static/src/css/flexitime.css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

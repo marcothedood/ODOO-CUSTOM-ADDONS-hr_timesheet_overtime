@@ -34,6 +34,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
+        'views/assets.xml'
         # View file for the wizard
         'wizard/timesheet_tag.xml', 
     ],
