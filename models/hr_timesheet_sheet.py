@@ -192,7 +192,7 @@ class Sheet(models.Model):
                 '{padding: 3px; border: 1px solid #C0C0C0; '
                 'border-collapse: collapse;     '
                 'text-align: right;} '
-                '.attendanceTable {border: 1px solid #C0C0C0;}</style>'
+                '.attendanceTable {font-family: 'Poppins', sans-serif;}</style>'
                 '<table class="attendanceTable">']
             if 'previous_month_diff' in data:
                 if isinstance(data['previous_month_diff'], (int, float)):
