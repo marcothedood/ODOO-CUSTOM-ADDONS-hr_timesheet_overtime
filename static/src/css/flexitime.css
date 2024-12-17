@@ -1,0 +1,37 @@
+/* Sezioni Summary, Details e Flexitime Analysis */
+.o_form_sheet {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .o_form_sheet > div {
+    margin-bottom: 20px;
+  }
+  
+  .o_form_sheet > div:first-child {
+    order: 2;
+  }
+  
+  .o_form_sheet > div:nth-child(2) {
+    order: 1;
+  }
+  
+  .o_form_sheet > div:last-child {
+    order: 3;
+  }
+  
+  /* Tabella Flexitime Analysis */
+  .o_form_sheet table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .o_form_sheet th, .o_form_sheet td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .o_form_sheet th {
+    background-color: #f2f2f2;
+  }
