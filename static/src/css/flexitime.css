@@ -36,3 +36,7 @@
 .o_web_client .o_form_view .o_form_sheet th {
     background-color: #f2f2f2 !important;
 }
+
+.attendanceTable {
+    font-family: 'Poppins', sans-serif !important;
+}
