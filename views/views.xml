@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <data>
                 <xpath expr="//form/sheet" position="before">
-                    <link rel="stylesheet" href="/your_module/static/src/css/flexitime.css"/>
+                    <link rel="stylesheet" href="/hr_timesheet_overtime/static/src/css/flexitime.css"/>
                 </xpath>
             <!-- Add fields after the group containing 'dates' -->
             <xpath expr="//form/sheet/group/group[@name='dates']" position="after">
