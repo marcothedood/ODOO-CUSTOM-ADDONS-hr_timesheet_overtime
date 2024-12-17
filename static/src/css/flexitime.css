@@ -1,22 +1,24 @@
-.attendanceTable {
+.o_web_client .o_form_view .o_form_sheet .attendanceTable {
     display: table !important;
-    border-collapse: collapse !important;  /* Override separate */
-    border-spacing: 0 !important;          /* Remove default spacing */
+    width: 100% !important;
+    border-collapse: collapse !important;
     border: 1px solid #C0C0C0 !important;
-    text-indent: initial !important;
-    unicode-bidi: isolate !important;
-    line-height: normal !important;
-    font-weight: normal !important;
-    font-size: medium !important;
-    font-style: normal !important;
-    text-align: start !important;
-    white-space: normal !important;
-    font-variant: normal !important;
-    box-sizing: border-box !important;
+    margin-bottom: 20px !important;
+    border-spacing: 0 !important;
 }
 
-/* Handle border colors explicitly */
-.attendanceTable {
+.o_web_client .o_form_view .o_form_sheet .attendanceTable td,
+.o_web_client .o_form_view .o_form_sheet .attendanceTable th {
+    padding: 8px !important;
+    border: 1px solid #C0C0C0 !important;
+    text-align: right !important;
+    border-spacing: 0 !important;
+}
+
+/* Override the border-color being reset by user agent */
+.o_web_client .o_form_view .o_form_sheet .attendanceTable,
+.o_web_client .o_form_view .o_form_sheet .attendanceTable td,
+.o_web_client .o_form_view .o_form_sheet .attendanceTable th {
     border-color: #C0C0C0 !important;
     border-top-color: #C0C0C0 !important;
     border-right-color: #C0C0C0 !important;
