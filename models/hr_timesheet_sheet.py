@@ -188,10 +188,11 @@ class Sheet(models.Model):
             data = self.attendance_analysis(sheet.id, function_call)
             values = []
             output = [
-                '<style>.attendanceTable td,.attendanceTable th {padding: 3px; border: 1px solid #C0C0C0;'
+                '<style>.attendanceTable td, .attendanceTable th {padding: 3px; border: 1px solid #C0C0C0;'
                 'border-collapse: collapse;     '
-                'text-align: right;} '
-                '.attendanceTable {font-family: Poppins, sans-serif;}</style>'
+                'text-align: right;}'
+                '.attendanceTable {font-family: "Helvetica Neue", sans-serif !important; border-spacing: 2px;'
+                'border: 1px solid #C0C0C0; border-collapse: collapse;}</style>'
                 '<table class="attendanceTable">']
             if 'previous_month_diff' in data:
                 if isinstance(data['previous_month_diff'], (int, float)):
