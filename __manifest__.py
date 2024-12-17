@@ -27,7 +27,7 @@
     'summary': 'Track over- and under-time based on timesheets (no attendance required), generate timesheets',
     'website': "http://www.martel-innovate.com",
     'category': 'Human Resources',
-    'depends': ['hr_timesheet_sheet', 'hr_contract', 'hr_holidays'],
+    'depends': ['hr_timesheet_sheet', 'hr_contract', 'hr_holidays', 'web'],
     'images': ['images/overundertime.png'],
     'installable': True,
     'application': False,
