@@ -36,5 +36,8 @@
         'views/views.xml',
         # View file for the wizard
         'wizard/timesheet_tag.xml', 
-    ]
+    ],
+    'css': [
+        'static/src/css/flexitime.css',
+    ],
 }
