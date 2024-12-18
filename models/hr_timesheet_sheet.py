@@ -191,7 +191,7 @@ class Sheet(models.Model):
                 '<style>.attendanceTable td, .attendanceTable th {padding: 3px; border: 1px solid #C0C0C0;'
                 'border-collapse: collapse;     '
                 'text-align: right;}'
-                '.attendanceTable {font-family: "Helvetica Neue", sans-serif !important; border-spacing: 2px;'
+                '.attendanceTable {font-family: "Montserrat", sans-serif !important; border-spacing: 2px;'
                 'border: 1px solid #C0C0C0; border-collapse: collapse;}</style>'
                 '<table class="attendanceTable">']
             if 'previous_month_diff' in data:

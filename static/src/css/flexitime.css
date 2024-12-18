@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+ 
+/* Il tuo CSS esistente con l'aggiunta del font-family */
 .o_web_client .o_form_view .o_form_sheet .attendanceTable {
     display: table !important;
     width: 100% !important;
@@ -5,17 +8,19 @@
     border: 1px solid #C0C0C0 !important;
     margin-bottom: 20px !important;
     border-spacing: 0 !important;
+    font-family: 'Poppins', sans-serif !important;  /* Aggiunta questa linea */
 }
-
+ 
 .o_web_client .o_form_view .o_form_sheet .attendanceTable td,
 .o_web_client .o_form_view .o_form_sheet .attendanceTable th {
     padding: 8px !important;
     border: 1px solid #C0C0C0 !important;
     text-align: right !important;
     border-spacing: 0 !important;
+    font-family: 'Poppins', sans-serif !important;  /* Aggiunta questa linea */
 }
-
-/* Override the border-color being reset by user agent */
+ 
+/* Il resto del tuo CSS rimane invariato */
 .o_web_client .o_form_view .o_form_sheet .attendanceTable,
 .o_web_client .o_form_view .o_form_sheet .attendanceTable td,
 .o_web_client .o_form_view .o_form_sheet .attendanceTable th {
