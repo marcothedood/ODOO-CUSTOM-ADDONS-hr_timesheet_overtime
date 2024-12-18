@@ -37,12 +37,4 @@
         # View file for the wizard
         'wizard/timesheet_tag.xml', 
     ],
-    'assets': {
-        'web.assets_backend': [
-            '/hr_timesheet_overtime/static/src/css/flexitime.css',
-        ],
-    'css' : [
-        '/hr_timesheet_overtime/static/src/css/flexitime.css',
-    ]
-    }
 }
