@@ -189,11 +189,11 @@ class Sheet(models.Model):
             values = []
             output = [
                 '<style>'
-                '@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");'
+                '/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */' #as discussed I will no longer use the Poppins font, preferring the system font instead
                 '.attendanceTable td, .attendanceTable th {padding: 3px; border: 1px solid #C0C0C0;'
                 'border-collapse: collapse;'
                 'text-align: right;}'
-                '.attendanceTable {font-family: "Poppins" !important; border-spacing: 2px;'
+                '.attendanceTable {font-family: ""; border-spacing: 2px;'
                 'font-size: 13px;'
                 'width: 100%;'
                 'border: 1px solid #C0C0C0; border-collapse: collapse;}</style>'
